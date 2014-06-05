@@ -5,7 +5,7 @@ html{
 }
 
 body{
-    width: 75%;
+    width: 960px;
     margin-left: auto;
     margin-right: auto;
     background-color: #FFE0B2;
@@ -44,6 +44,13 @@ h3{
     font-family: 'Oswald', sans-serif;
     font-size: 1.3em;
     color: #282828;
+}
+
+/*------------------------------------nav elements-------------------------------*/
+
+.signIn{
+    float: right;
+    padding-right: 30px;
 }
 
 /*------------------------------------nav elements-------------------------------*/
