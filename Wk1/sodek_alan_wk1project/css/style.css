@@ -1,0 +1,119 @@
+/* This is the CSS */
+
+html{
+    background-color: #282828;
+}
+
+body{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFE0B2;
+}
+
+.logo{
+    float: left;
+}
+
+.tree{
+    float: right;
+    padding-top: 3px;
+    padding-right: 10px;
+}
+
+/*------------------------------------nav elements-------------------------------*/
+
+nav{
+    clear: both;
+}
+
+nav ul{
+	margin: 0% auto;
+	list-style-type: none;
+	padding: 0%;
+	overflow: hidden;
+}
+
+nav li{
+	background: #282828;
+	width: 16.6666667%; 
+	float: left;
+	font-size: .8em;
+	list-style-type: none;
+}
+
+nav a{
+	text-decoration: none;
+	display: block;
+	height: 56px;
+	line-height: 56px;
+	text-align: center;
+	color: #fff;
+}
+
+nav a:hover{
+	color: #29bf1c;
+	background: #282828;
+}
+
+nav a:active{
+	color: #fff;
+	background: #29bf1c;
+}
+
+/*------------------------------------Index elements-------------------------------*/
+
+h1{
+    text-align: center;
+}
+
+/*------------------------------------info elements-------------------------------*/
+
+.info{
+    width: 45%;
+    float: left;
+}
+
+.info p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.info h2{
+    text-align: center;
+}
+
+/*------------------------------------sign up elements-------------------------------*/
+
+.sign{
+    width: 45%;
+    float: right;
+    text-align: center;
+}
+
+/*------------------------------------Photo elements-------------------------------*/
+
+.photos{
+    clear: both;
+}
+
+/*------------------------------------footer elements-------------------------------*/
+
+.footer{
+    text-align: center;
+    clear: both;
+}
+
+/*------------------------------------Registration elements-------------------------------*/
+
+.form{
+    width: 50%;
+    float: left;
+}
+
+.red{
+    float: right;
+}
+
+/*------------------------------------Admin elements-------------------------------*/
+
