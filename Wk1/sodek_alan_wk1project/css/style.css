@@ -21,6 +21,31 @@ body{
     padding-right: 10px;
 }
 
+h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+    color: #282828;
+}
+
+p, li, input{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    color: #282828;
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    color: #282828;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    color: #282828;
+}
+
 /*------------------------------------nav elements-------------------------------*/
 
 nav{
@@ -62,10 +87,6 @@ nav a:active{
 }
 
 /*------------------------------------Index elements-------------------------------*/
-
-h1{
-    text-align: center;
-}
 
 /*------------------------------------info elements-------------------------------*/
 
