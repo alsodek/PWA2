@@ -8,6 +8,7 @@ body{
     width: 960px;
     margin-left: auto;
     margin-right: auto;
+    background-image: url('../images/GC_background.jpg');
     background-color: #FFE0B2;
 }
 
@@ -25,7 +26,7 @@ h1{
     text-align: center;
     font-family: 'Lobster', cursive;
     font-size: 5em;
-    color: #282828;
+    color: #29bf1c;
 }
 
 p, li, input{
@@ -86,6 +87,8 @@ nav a{
 nav a:hover{
 	color: #29bf1c;
 	background: #282828;
+    position: relative;
+	bottom: 2px;
 }
 
 nav a:active{
