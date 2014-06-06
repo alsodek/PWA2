@@ -1,13 +1,17 @@
 /* This is the CSS */
 
+/* solid background image for entire site (empty space on sides) */
 html{
     background-color: #282828;
 }
 
 body{
+    /* set width of 960px */
     width: 960px;
+    /* margins auto to center site */
     margin-left: auto;
     margin-right: auto;
+    /* Background image */
     background-image: url('../images/GC_background.jpg');
     background-color: #FFE0B2;
 }
@@ -16,12 +20,7 @@ body{
     float: left;
 }
 
-.tree{
-    float: right;
-    padding-top: 3px;
-    padding-right: 10px;
-}
-
+/* Center text and add font/size/color */
 h1{
     text-align: center;
     font-family: 'Lobster', cursive;
@@ -49,6 +48,7 @@ h3{
 
 /*------------------------------------nav elements-------------------------------*/
 
+/* Align to the right. */
 .signIn{
     float: right;
     padding-right: 30px;
@@ -60,6 +60,7 @@ nav{
     clear: both;
 }
 
+/* hide overflow */
 nav ul{
 	margin: 0% auto;
 	list-style-type: none;
@@ -67,26 +68,33 @@ nav ul{
 	overflow: hidden;
 }
 
+/* set width/background color */
 nav li{
 	background: #282828;
 	width: 16.6666667%; 
 	float: left;
-	font-size: .8em;
 	list-style-type: none;
 }
 
+
 nav a{
+    /* remove bullets */
 	text-decoration: none;
 	display: block;
+    /* set height */
 	height: 56px;
 	line-height: 56px;
+    /* center text */
 	text-align: center;
+    /* add color */
 	color: #fff;
 }
 
+/* hover mechanic */
 nav a:hover{
 	color: #29bf1c;
 	background: #282828;
+    /* shifts text up on hover */
     position: relative;
 	bottom: 2px;
 }
