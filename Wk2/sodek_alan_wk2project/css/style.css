@@ -1,0 +1,158 @@
+/* This is the CSS */
+
+/* solid background image for entire site (empty space on sides) */
+html{
+    background-color: #282828;
+}
+
+body{
+    /* set width of 960px */
+    width: 960px;
+    /* margins auto to center site */
+    margin-left: auto;
+    margin-right: auto;
+    /* Background image */
+    background-image: url('../images/GC_background.jpg');
+    background-color: #FFE0B2;
+}
+
+.logo{
+    float: left;
+}
+
+/* Center text and add font/size/color */
+h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+    color: #29bf1c;
+}
+
+p, li, input{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    color: #282828;
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    color: #282828;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    color: #282828;
+}
+
+/*------------------------------------nav elements-------------------------------*/
+
+/* Align to the right. */
+.signIn{
+    float: right;
+    padding-right: 30px;
+}
+
+/*------------------------------------nav elements-------------------------------*/
+
+nav{
+    clear: both;
+}
+
+/* hide overflow */
+nav ul{
+	margin: 0% auto;
+	list-style-type: none;
+	padding: 0%;
+	overflow: hidden;
+}
+
+/* set width/background color */
+nav li{
+	background: #282828;
+	width: 16.6666667%; 
+	float: left;
+	list-style-type: none;
+}
+
+
+nav a{
+    /* remove bullets */
+	text-decoration: none;
+	display: block;
+    /* set height */
+	height: 56px;
+	line-height: 56px;
+    /* center text */
+	text-align: center;
+    /* add color */
+	color: #fff;
+}
+
+/* hover mechanic */
+nav a:hover{
+	color: #29bf1c;
+	background: #282828;
+    /* shifts text up on hover */
+    position: relative;
+	bottom: 2px;
+}
+
+nav a:active{
+	color: #fff;
+	background: #29bf1c;
+}
+
+/*------------------------------------Index elements-------------------------------*/
+
+/*------------------------------------info elements-------------------------------*/
+
+.info{
+    width: 45%;
+    float: left;
+}
+
+.info p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.info h2{
+    text-align: center;
+}
+
+/*------------------------------------sign up elements-------------------------------*/
+
+.sign{
+    width: 45%;
+    float: right;
+    text-align: center;
+}
+
+/*------------------------------------Photo elements-------------------------------*/
+
+.photos{
+    clear: both;
+}
+
+/*------------------------------------footer elements-------------------------------*/
+
+.footer{
+    text-align: center;
+    clear: both;
+}
+
+/*------------------------------------Registration elements-------------------------------*/
+
+.form{
+    width: 50%;
+    float: left;
+}
+
+.red{
+    float: right;
+}
+
+/*------------------------------------Admin elements-------------------------------*/
+

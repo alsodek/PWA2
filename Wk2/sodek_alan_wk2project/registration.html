@@ -25,25 +25,25 @@
 	<!-- CSS concatenated and minified via ant build script-->
 	<link rel="stylesheet" href="css/style.css?v=1">
 	<!-- end CSS-->
-	
+    
     <!-- Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    
+	
 </head>
 
 <body>
 
 	<header>
 	
-        <!-- Created a div for logo/login section -->
+        <!--  Created a div for logo/login section -->
 		<div class="banner">
             
             <!-- Logo -->
             <a href="index.html"> <img src="images/GC_logo.png" alt="Garden Club Logo." class="logo" height="225" width="350"></a>
             
-            <!-- Sign in section -->
-             <div class="signIn">
+            <!-- Login section  -->
+            <div class="signIn">
                 <form autocomplete="on">
                     <p>Username</p><input type="text" name="username"><br>
                     <p>Password</p><input type="text" name="password"><br>
@@ -67,24 +67,36 @@
 	</header>	
 	
 	<h1>Garden Club</h1>
-	
-	<h2>Admin Page</h2>
 
-    <div class="welcome">
-        <p>Welcome User!</p>
-    </div>
+	<h2>Registation Page</h2>
+
+    <!-- Sign Up form. Where users will create account.  -->
+    <div class="form">
         
-    <div class="signout">
-        <button type="button">Sign Out</button> 
-    </div>
-    
-	<p>This is the page for Admins.</p>
-    
+        <h3>Sign Up!</h3>
+        
+	   <form action="demo_form.asp" autocomplete="on">
+           
+           <!-- Autofocus on first element  -->
+  		    <p>First name:</p><input type="text" name="fname" autofocus><br>
+  		    <p>Last name: </p><input type="text" name="lname"><br>
+  		    <p>Date of Birth: </p><input type="date" name="dob"><br>
+  		    <p>City: </p><input type="text" name="city"><br>
+  		    <p>State: </p><input type="text" name="state"><br>
+  		    <p>E-mail: </p><input type="email" name="email" autocomplete="off"><br>
+           <!-- Submit button  -->
+  		    <input type="submit">
+	   </form>
+        
+    </div>    
+	
     <!-- Img -->
-    <a href="images/tree1.jpg"> <img src="images/tree1.jpg" alt="Picture of tree." class="tree" height="408" width="306"></a>
+    <div class="red">
+        <a href="images/red1.jpg"> <img src="images/red1.jpg" alt="Picture of flowers." height="408" width="306" ></a>
+    </div>    
     
     <!-- Footer -->
-    <div class="footer">
+	<div class="footer">
         <p>Created by Alan Sodek.</p>
     </div>
     
@@ -98,3 +110,14 @@
   
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
