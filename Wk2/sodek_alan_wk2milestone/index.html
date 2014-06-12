@@ -44,10 +44,10 @@
             
             <!-- Login section  -->
              <div class="signIn">
-                <form autocomplete="on">
-                    <p>Username</p><input type="text" name="username"><br>
-                    <p>Password</p><input type="text" name="password"><br>
-                    <input type="submit">
+                <form id="loginForm" autocomplete="on">
+                    <p>Username</p><input type="text" name="username" id="user" title="Please enter your Username" class="masterTooltip" required><br>
+                    <p>Password</p><input type="text" name="password" id="pass" title="Please enter your Password" class="masterTooltip" required><br>
+                    <input name="SigninButton" type="button" id="signinButton" value="Sign In" />
                 </form>
             </div>
             
@@ -85,7 +85,7 @@
         
 	   <p>Please sign up to be a part of the Garden Club!</p>
 	
-	   <button a href="registration.html">Sign Up!</button>
+	   <input name="regbtn" type="button" value="Sign Up" class="masterTooltip" title="Join Today!" />
 	</div>
 	
     <!-- Section for Photos -->
