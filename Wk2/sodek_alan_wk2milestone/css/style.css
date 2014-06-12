@@ -169,6 +169,35 @@ nav a:active{
 }
 
 /*------------------------------------Admin elements-------------------------------*/
+.asdf {
+    float: left;
+}
+.mytabs {
+    clear: both;
+    width: 760px;
+    background-color: #ccc;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabs li {
+    list-style: none;
+    display: inline;
+}
+
+.tabs a {
+    padding: 5px 10px;
+    display: inline-block;
+    background: #666;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tabs a.active {
+    background: #fff;
+    color: #282828;
+}
 
 .tree {
     float: left;
