@@ -46,6 +46,10 @@ h3{
     color: #282828;
 }
 
+label {
+     font-family: 'Oswald', sans-serif;
+}
+
 /*------------------------------------tooltip elements-------------------------------*/
 
 .tooltip {
@@ -65,9 +69,25 @@ h3{
 /* Align to the right. */
 .signIn{
     float: right;
-    padding-right: 30px;
+    margin-right: 30px;
+    margin-top: 50px;   
 }
 
+#signinButton{
+    float: right;
+}
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 150px;
+    text-align: right;
+}
+input {
+  display: inline-block;
+  float: left;
+}
 /*------------------------------------nav elements-------------------------------*/
 
 nav{
@@ -120,11 +140,24 @@ nav a:active{
 
 /*------------------------------------Index elements-------------------------------*/
 
+.photos{
+    width: 100%;
+    margin-top: 400px;
+}
+
+.photos img{
+    margin-left: 18px;
+    border: 5px solid #282828;
+}
+
 /*------------------------------------info elements-------------------------------*/
 
 .info{
     width: 45%;
+    height: 300px;
     float: left;
+    margin-left: 25px;
+    border: 5px solid #282828;
 }
 
 .info p{
@@ -138,16 +171,35 @@ nav a:active{
 
 /*------------------------------------sign up elements-------------------------------*/
 
+
 .sign{
     width: 45%;
+    height: 300px;
     float: right;
+    margin-right: 25px;
+    border: 5px solid #282828;
+}
+
+.sign h2{
     text-align: center;
+}
+
+.sign p{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /*------------------------------------Photo elements-------------------------------*/
 
 .photos{
     clear: both;
+    width: 100%;
+    margin-top: 400px;
+}
+
+.photos img{
+    margin-left: 18px;
+    border: 5px solid #282828;
 }
 
 /*------------------------------------footer elements-------------------------------*/
@@ -159,13 +211,24 @@ nav a:active{
 
 /*------------------------------------Registration elements-------------------------------*/
 
+.rh3{
+    text-align: center;
+}
+
 .form{
     width: 50%;
     float: left;
+    margin-left: 18px;
+    border: 5px solid #282828;
+}
+
+.form h3{
+    text-align: center;
 }
 
 .red{
     float: right;
+    border: 5px solid #282828;
 }
 
 /*------------------------------------Admin elements-------------------------------*/
@@ -251,7 +314,8 @@ nav a:active{
     padding: 5px 10px;
     border: 1px solid #ccc;
     cursor: pointer;
-    background-color: #F00;
+    background-color: #fff;
+    color: #f00;
 }
 
 form {
@@ -286,7 +350,7 @@ input[type=radio] + img{
 }
 
 input[type=radio]:checked + img{
-    border: 2px solid #f00;
+    border: 2px solid #29bf1c;
 }
 
 
