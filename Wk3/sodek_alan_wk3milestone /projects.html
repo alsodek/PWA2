@@ -1,0 +1,154 @@
+<!doctype html>  
+
+<!--
+	This is the main index of the application
+	
+	All your script tags should be at the bottom of this file
+	
+	The only html element in the body is the container div
+	Your code should load your page templates into the container
+-->
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Garden Club</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- CSS concatenated and minified via ant build script-->
+	<link rel="stylesheet" href="css/style.css?v=1">
+	<!-- end CSS-->
+    
+    <!-- Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body>
+    
+	<header>
+	   
+        <!--  Created a div for logo/login section -->
+        <div class="banner">
+            
+            <!-- Logo -->
+            <a href="index.html"> <img src="images/GC_logo.png" alt="Garden Club Logo." class="logo" height="225" width="615"></a>
+            
+            <!-- Login section  Not needed on Projects Page
+             <div class="signIn">
+                <form id="loginForm" autocomplete="on">
+                    <label class="uname">Username: </label><input type="text" name="signinButton" id="user" title="Please enter your Username" class="masterTooltip" required><br>
+                    <label class="pword">Password: </label><input type="password" name="signinButton" id="pass" title="Please enter your Password" class="masterTooltip" required><br>
+                    <input name="signinButton" type="button" class="myButton" id="signinButton" value="Sign In" />
+                </form>
+            </div>
+            -->
+        </div>
+        
+		<!-- Set up a navigation system.-->
+		<nav>
+	
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="registration.html">Registration</a></li>
+				<li><a href="admin.html">Admin</a></li>
+                <li><a href="projects.html">Projects</a></li>
+			</ul>
+	
+		</nav>
+		
+	</header>	
+    
+    <h1>Projects</h1>
+    
+    <div class="userid">
+        <p>Welcome User:</p>
+    </div>
+    
+    <div class="logoutbox">
+        <button class="dashboard">Dashboard</button> 
+        <input name="logOut" type="button" id="logOut" value="Sign Out" />
+    </div>
+    
+    <br>
+    <br>
+    
+    <div class="welcome">
+        <input name="modalClick" type="button" class="modalClick" value="Add Project" />
+    </div>
+    
+    
+    
+    <div id="overlay">
+        <div id="modal">
+            <span class="close">X</span>
+            <h3 class="header">Add Project</h3>
+            <div id="add">
+                <form id="addForm">
+                    <label>Project Name: </label>
+                        <input name="projectName" type="text" id="projectName" /><br>
+                    <label>Project Description: </label>
+                        <input name="projectDescription" type="text" id="projectDescription" /><br>
+                    <label>Project Due Date: </label>
+                        <input name="projectDueDate" type="text" id="projectDueDate" /><br>
+                    <label for="status">Select Status: </label>
+                    <label class="mystatus">
+                    <input type="radio" name="status" id="urgent"> <img src="images/icon1.jpg" width="69" height="75">
+                    </label>
+                    
+                    <label class="mystatus">
+                    <input type="radio" name="status" id="normal"> <img src="images/icon2.jpg" width="69" height="75">
+                    </label>
+                    
+                    <label class="mystatus">
+                    <input type="radio" name="status" id="delayed"> <img src="images/icon3.jpg" width="69" height="75">
+                    </label>
+                    
+                    <label class="mystatus">
+                    <input type="radio" name="status" id="complete"> <img src="images/icon4.jpg" width="69" height="75">
+                    </label>
+                    
+                    <br>
+                    
+                    <input name="addButton" type="button" id="addButton" value="Add" />
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <div id="projectlist">
+        <h2>Current Projects</h2>
+        
+        <div class="projects">
+        </div>
+    </div>
+    
+    <!-- Footer -->
+	<div class="footer">
+        <p>Created by Alan Sodek.</p>
+    </div>
+    
+	<!-- jquery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- plugins -->
+
+	
+	<!-- main -->
+	<script type="text/javascript" src="js/main.js"></script>
+  
+</body>
+</html>

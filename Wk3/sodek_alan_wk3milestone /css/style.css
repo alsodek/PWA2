@@ -1,0 +1,439 @@
+/* This is the CSS */
+
+/* solid background image for entire site (empty space on sides) */
+html{
+    background-color: #282828;
+}
+
+body{
+    /* set width of 960px */
+    width: 960px;
+    /* margins auto to center site */
+    margin-left: auto;
+    margin-right: auto;
+    /* Background image */
+    background-image: url('../images/GC_background.jpg');
+    background-color: #FFE0B2;
+}
+
+.logo{
+    float: left;
+}
+
+/* Center text and add font/size/color */
+h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+    color: #29bf1c;
+}
+
+p, li, input{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    color: #282828;
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    color: #282828;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    color: #282828;
+}
+
+label {
+     font-family: 'Oswald', sans-serif;
+}
+
+/*------------------------------------tooltip elements-------------------------------*/
+
+.tooltip {
+    display: none;
+    position: absolute;
+    border: 1px solid #333;
+    background-color: #282828;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*------------------------------------sign in elements-------------------------------*/
+
+/* Align to the right. */
+.signIn{
+    float: right;
+    margin-right: 30px;
+    margin-top: 70px;   
+}
+
+#signinButton{
+    float: right;
+}
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 150px;
+    text-align: right;
+}
+input {
+  display: inline-block;
+  float: left;
+}
+
+/*------------------------------------nav elements-------------------------------*/
+
+nav{
+    clear: both;
+}
+
+/* hide overflow */
+nav ul{
+	margin: 0% auto;
+	list-style-type: none;
+	padding: 0%;
+	overflow: hidden;
+}
+
+/* set width/background color */
+nav li{
+	background: #282828;
+	width: 16.6666667%; 
+	float: left;
+	list-style-type: none;
+}
+
+
+nav a{
+    /* remove bullets */
+	text-decoration: none;
+	display: block;
+    /* set height */
+	height: 56px;
+	line-height: 56px;
+    /* center text */
+	text-align: center;
+    /* add color */
+	color: #fff;
+}
+
+/* hover mechanic */
+nav a:hover{
+	color: #29bf1c;
+	background: #282828;
+    /* shifts text up on hover */
+    position: relative;
+	bottom: 2px;
+}
+
+nav a:active{
+	color: #fff;
+	background: #29bf1c;
+}
+
+/*------------------------------------Index elements-------------------------------*/
+
+.photos{
+    width: 100%;
+    margin-top: 400px;
+}
+
+.photos img{
+    margin-left: 18px;
+    border: 5px solid #282828;
+}
+
+/*------------------------------------info elements-------------------------------*/
+
+.info{
+    width: 45%;
+    height: 300px;
+    float: left;
+    margin-left: 25px;
+    border: 5px solid #282828;
+}
+
+.info p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.info h2{
+    text-align: center;
+}
+
+/*------------------------------------sign up elements-------------------------------*/
+
+
+.sign{
+    width: 45%;
+    height: 300px;
+    float: right;
+    margin-right: 25px;
+    border: 5px solid #282828;
+}
+
+.sign h2{
+    text-align: center;
+}
+
+.sign p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#regbtn{
+    margin-top: 20px;
+    margin-left: 175px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+}
+
+/*------------------------------------Photo elements-------------------------------*/
+
+.photos{
+    clear: both;
+    width: 100%;
+    margin-top: 400px;
+}
+
+.photos img{
+    margin-left: 18px;
+    border: 5px solid #282828;
+}
+
+/*------------------------------------footer elements-------------------------------*/
+
+.footer{
+    text-align: center;
+    clear: both;
+}
+
+/*------------------------------------Registration elements-------------------------------*/
+
+.form{
+    width: 50%;
+    float: left;
+    margin-left: 18px;
+    border: 5px solid #282828;
+}
+
+.form h3{
+    text-align: center;
+}
+
+.red{
+    float: right;
+    border: 5px solid #282828;
+}
+
+/*------------------------------------Admin elements-------------------------------*/
+
+.asdf {
+    float: left;
+}
+
+.mytabs {
+    clear: both;
+    width: 760px;
+    background-color: #ccc;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #282828;
+}
+
+.tabs li {
+    list-style: none;
+    display: inline;
+}
+
+.tabs a {
+    padding: 5px 10px;
+    display: inline-block;
+    background: #282828;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tabs a.active {
+    background: #fff;
+    color: #282828;
+}
+
+.tree {
+    margin-top: 50px;
+    clear: both;
+    border: 5px solid #282828;
+}
+
+/*------------------------------------Projects elements-------------------------------*/
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+#modal {
+    width: 350px;
+    background: #ccc;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    z-index: 1001;
+    display: none;
+}
+
+#modal .header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+#modal p {
+    margin: 15px;
+    
+}
+
+#modal .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #fff;
+    color: #f00;
+}
+
+form {
+    padding: 10px;
+}
+
+form .input {
+    padding: 10px;
+}
+
+header {
+    width: 960px;
+}
+
+.userid {
+    width: 100px;
+    float: left;
+}
+
+.logoutbox {
+    width: 400px;
+    float: right;
+}
+
+.mystatus > input[type=radio]{
+    display: none;
+}
+
+input[type=radio] + img{
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+input[type=radio]:checked + img{
+    border: 2px solid #29bf1c;
+}
+
+
+
+/*------------------------------------Button elements-------------------------------*/
+
+.myButton {
+	-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#72b352',GradientType=0);
+	background-color:#77b55a;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
+	background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#72b352', endColorstr='#77b55a',GradientType=0);
+	background-color:#72b352;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
