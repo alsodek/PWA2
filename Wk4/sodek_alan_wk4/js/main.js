@@ -1,6 +1,6 @@
 /*  
-	Your Project Title
-	Author: You
+	Garden Club
+	Author: Alan Sodek
 */
 
 (function($){
@@ -47,6 +47,19 @@
         })
     });
     
+    
+    /*
+	===============================================
+	========================= DISPLAY USERNAME
+	*/
+    
+    $.getJSON("xhr/check_login.php", function(data){
+        console.log(data);
+        $.each(data, function(key, val){
+            console.log(val.first_name);
+            $(".userid").html("Welcome " + val.first_name + "!");
+        })
+    });
     
     
     /*
@@ -289,12 +302,13 @@
                         var result = response.projects[i];
                         
                         $(".projects").append(
-                            '<div style="border:1px solid black">' +
+                            //'<div style="border:1px solid black">' +
+                            '<div id="sortable" class="ui-state-default">' +
                             " <input class='projectid' type='hidden' value='" + result.id + "'>" +
-                            " Project Name: " + result.projectName + "<br>" +
-                            " Project Description: " + result.projectDescription + "<br>" +
-                            " Project Due Date: " + result.dueDate + "<br>" +
-                            " Project Status: " + result.status + "<br>"
+                            " Store Name: " + result.projectName + "<br>" +
+                            " Store Description: " + result.projectDescription + "<br>" +
+                            " Date Visited: " + result.dueDate + "<br>" +
+                            " Overall Experience: " + result.status + "<br>"
                             + '<button class="deletebtn">Delete</button>'
                             //+ '<button class="editbtn">Edit</button>'
                             + '</div> <br>'
@@ -345,16 +359,44 @@
     
     /*
 	===============================================
-	======================================== EVENTS	
+	======================================== SORTABLE	
 	*/
     
+    $( "#sortable" ).sortable({
+      placeholder: "ui-state-highlight"
+    });
+    $( "#sortable" ).disableSelection();
+    
+    
+    /*
+	===============================================
+	======================================== DATE PICKER	
+	*/
+    
+    $( ".mydatepicker" ).datepicker();
+    
 	/*	
-	==================================== END EVENTS 
+	==================================== SPINNER 
 	===============================================
 	*/
-		
-		
-
+    
+    var state = true;
+    $( "#tgbut" ).click(function() {
+      if ( state ) {
+        $( "#effect" ).animate({
+          backgroundColor: "#aa0000",
+          color: "#fff",
+          width: 400
+        }, 1000 );
+      } else {
+        $( "#effect" ).animate({
+          backgroundColor: "#fff",
+          color: "#000",
+          width: 300
+        }, 1000 );
+      }
+      state = !state;
+    });
 	
 })(jQuery); // end private scope
 

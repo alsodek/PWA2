@@ -1,0 +1,133 @@
+<!doctype html>  
+
+<!--
+	This is the main index of the application
+	
+	All your script tags should be at the bottom of this file
+	
+	The only html element in the body is the container div
+	Your code should load your page templates into the container
+-->
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Garden Club</title>
+	<meta name="description" content="Welcome to the Garden Club!">
+	<meta name="author" content="Alan Sodek">
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- CSS concatenated and minified via ant build script-->
+	<link rel="stylesheet" href="css/style.css?v=1">
+    <link rel="stylesheet" href="css/le-frog/jquery-ui-1.10.4.custom.css">
+	<!-- end CSS-->
+    
+    <!-- Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body>
+
+	<header>
+	
+        <!--  Created a div for logo/login section -->
+		<div class="banner">
+            
+            <!-- Logo -->
+            <a href="index.html"> <img src="images/GC_logo.png" alt="Garden Club Logo." class="logo" height="225" width="615"></a>
+            
+            <!-- Login section  -->
+            <div class="signIn">
+                <form id="loginForm" autocomplete="on">
+                    <label class="uname">Username: </label><input type="text" name="signinButton" id="user" title="Please enter your Username" class="masterTooltip" required><br>
+                    <label class="pword">Password: </label><input type="password" name="signinButton" id="pass" title="Please enter your Password" class="masterTooltip" required><br>
+                    <input name="signinButton" type="button" class="myButton" id="signinButton" value="Sign In" />
+                </form>
+            </div>
+            
+        </div>
+		
+		<!-- Set up a navigation system.-->
+		<nav>
+	
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="registration.html">Registration</a></li>
+			</ul>
+	
+		</nav>
+		
+	</header>	
+	
+	<h1>Registration</h1>
+    
+    <!-- Toggler widget  -->
+    <div class="regfirst">
+        <div class="toggler">
+            <div id="effect" class="ui-widget-content ui-corner-all">
+                <h3 class="ui-widget-header ui-corner-all">Sign Up Today!</h3>
+                <p>Great benefits such as; posting your posts to the board, checking out others posts and of course find out the best garden stores in your area!</p>
+            </div>
+        </div>
+ 
+            <!-- Toggle button  -->
+            <a href="#" id="tgbut" class="ui-state-default ui-corner-all">Why?</a>
+
+        <!-- Sign Up form. Where users will create account.  -->
+        <div class="form">  
+        
+	       <form action="demo_form.asp" autocomplete="on">
+           
+                <!-- Autofocus on first element  -->
+  		        <label for="first-name">First name: </label><input id="first" type="text" name="first-name" title="Please enter your First Name" class="masterTooltip" required autofocus><br>
+  		        <label for="last-name">Last name: </label><input id="last" type="text" name="last-name" title="Please enter your Last Name" class="masterTooltip" required><br>
+                <label for="email">E-mail: </label><input id="email" type="email" name="email" title="Please enter your E-mail" class="masterTooltip" required autocomplete="off"><br>
+  		        <label for="user-name">Username: </label><input id="userName" type="text" name="user-name" title="Please enter a Username" class="masterTooltip" required><br>
+  		        <label for="password">Password: </label><input id="password" type="password" name="password" title="Please enter a Password" class="masterTooltip" required><br>
+                <!-- Submit button  -->
+  		        <input type="button" class="myButton" id="register" value="Submit">
+	       </form>
+        
+        </div> 
+    </div>    
+	
+    <!-- Img -->
+    <div class="red">
+        <a href="images/red1.jpg"> <img src="images/red1.jpg" alt="Picture of flowers." height="526" width="432" ></a>
+        <!-- height="408" width="306" -->
+    </div>    
+    
+    <!-- Footer -->
+	<div class="footer">
+        <p>Created by Alan Sodek.</p>
+    </div>
+    
+	<!-- jquery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+	<!-- plugins -->
+    <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
+	
+	<!-- main -->
+	<script type="text/javascript" src="js/main.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

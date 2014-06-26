@@ -24,6 +24,7 @@
 	
 	<!-- CSS concatenated and minified via ant build script-->
 	<link rel="stylesheet" href="css/style.css?v=1">
+    <link rel="stylesheet" href="css/le-frog/jquery-ui-1.10.4.custom.css">
 	<!-- end CSS-->
     
     <!-- Fonts-->
@@ -69,52 +70,54 @@
     
     <h1>Projects</h1>
     
-    <div class="userid">
-        <p>Welcome User:</p>
-    </div>
+    <!-- Dynamically shows the users name  -->
+    <div class="asdf">
+        <div class="userid">
+            <p>Welcome User:</p>
+        </div>
     
-    <div class="logoutbox">
-        <button class="dashboard">Dashboard</button> 
-        <input name="logOut" type="button" id="logOut" value="Sign Out" />
+        <!-- Logout and Dashboard buttons  -->
+        <div class="logoutbox">
+            <a href="admin.html"> <input type="button" value="Dashboard" class="myButton" class="masterTooltip" /></a>
+            <input name="logOut" type="button" id="logOut" value="Sign Out" class="myButton" />
+        </div>
     </div>
     
     <br>
     <br>
-    
-    <div class="welcome">
-        <input name="modalClick" type="button" class="modalClick" value="Add Project" />
-    </div>
-    
-    
-    
+
+    <!-- Modal that allows user to add more projects  -->
     <div id="overlay">
         <div id="modal">
             <span class="close">X</span>
             <h3 class="header">Add Project</h3>
             <div id="add">
                 <form id="addForm">
-                    <label>Project Name: </label>
+                    <label>Store Name: </label>
                         <input name="projectName" type="text" id="projectName" /><br>
-                    <label>Project Description: </label>
+                    <label>Store Description: </label>
                         <input name="projectDescription" type="text" id="projectDescription" /><br>
-                    <label>Project Due Date: </label>
-                        <input name="projectDueDate" type="text" id="projectDueDate" /><br>
-                    <label for="status">Select Status: </label>
-                    <label class="mystatus">
-                    <input type="radio" name="status" id="urgent"> <img src="images/icon1.jpg" width="69" height="75">
-                    </label>
+                    <label>Date Visited: </label>
+                        <input name="projectDueDate" type="text" id="projectDueDate" class="mydatepicker" /> 
+                    <label class="mystatus">Overall Experience: </label>
+                    <br>
+                   
+                        <!-- Four status icons  -->
+                        <label class="mystatus">
+                        <input type="radio" name="status" id="Very happy"> <img src="images/vhappyv2.jpg" width="69" height="75">
+                        </label>
                     
-                    <label class="mystatus">
-                    <input type="radio" name="status" id="normal"> <img src="images/icon2.jpg" width="69" height="75">
-                    </label>
+                        <label class="mystatus">
+                        <input type="radio" name="status" id="Satisfied"> <img src="images/happy.jpg" width="69" height="75">
+                        </label>
                     
-                    <label class="mystatus">
-                    <input type="radio" name="status" id="delayed"> <img src="images/icon3.jpg" width="69" height="75">
-                    </label>
+                        <label class="mystatus">
+                        <input type="radio" name="status" id="Neutral"> <img src="images/neutral.jpg" width="69" height="75">
+                        </label>
                     
-                    <label class="mystatus">
-                    <input type="radio" name="status" id="complete"> <img src="images/icon4.jpg" width="69" height="75">
-                    </label>
+                        <label class="mystatus">
+                        <input type="radio" name="status" id="Unhappy"> <img src="images/unhappy.jpg" width="69" height="75">
+                        </label>
                     
                     <br>
                     
@@ -130,10 +133,16 @@
     
     
     
-    <div id="projectlist">
+    <div id="projectList">
         <h2>Current Projects</h2>
         
-        <div class="projects">
+        <!-- Button to bring up modal  -->
+        <div class="welcome">
+            <input name="modalClick" type="button"  class="modalClick" value="Add Project" />
+        </div>
+        
+        <!-- Displays all of the projects  -->
+        <div class="projects" id="sortable">
         </div>
     </div>
     
@@ -144,8 +153,9 @@
     
 	<!-- jquery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
 	<!-- plugins -->
-
+    <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
 	
 	<!-- main -->
 	<script type="text/javascript" src="js/main.js"></script>
